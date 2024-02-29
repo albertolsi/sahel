@@ -19853,6 +19853,14 @@
           }
         ],
         "lineageTag": "6ebe5e5c-eb5c-4f22-8467-ae43bbb8c85a",
+        "measures": [
+          {
+            "name": "suma",
+            "expression": "SUM(poblacion[POBLACIÓN])",
+            "formatString": "0",
+            "lineageTag": "10ebc49e-d9d8-4f61-bd14-442d5b3efd12"
+          }
+        ],
         "partitions": [
           {
             "name": "poblacion-402e710f-4470-4cc1-8854-4cdc416e13d8",
