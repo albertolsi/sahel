@@ -18976,13 +18976,13 @@
           }
         ],
         "expression": [
-          "let",
-          "\tBinaryToPbiImage = (BinaryContent as binary) as text =>",
-          "let",
-          "\tBase64 = \"data:image/jpeg;base64, \" & Binary.ToText(BinaryContent,BinaryEncoding.Base64)",
-          "in",
-          "\tBase64",
-          "in",
+          "let\r",
+          "\tBinaryToPbiImage = (BinaryContent as binary) as text =>\r",
+          "let\r",
+          "\tBase64 = \"data:image/jpeg;base64, \" & Binary.ToText(BinaryContent,BinaryEncoding.Base64)\r",
+          "in\r",
+          "\tBase64\r",
+          "in\r",
           "\tBinaryToPbiImage"
         ],
         "kind": "m",
