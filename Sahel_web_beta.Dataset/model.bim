@@ -20387,6 +20387,19 @@
           }
         ],
         "lineageTag": "61989ecc-21a6-4190-9da0-9c297a7e81b7",
+        "measures": [
+          {
+            "name": "Measure",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "SUM(municipios[Shape_Area])",
+            "lineageTag": "9381c96b-8186-4230-95c9-c33fe34183ab"
+          }
+        ],
         "partitions": [
           {
             "name": "areas_protegidas-b7d9d772-0bd4-4ecc-a284-3f721f0780c0",
