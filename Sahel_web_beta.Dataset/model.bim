@@ -20398,6 +20398,17 @@
             ],
             "expression": "SUM(municipios[Shape_Area])",
             "lineageTag": "9381c96b-8186-4230-95c9-c33fe34183ab"
+          },
+          {
+            "name": "medida2",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "DIVIDE(areas_protegidas[Measure],2)",
+            "lineageTag": "e02640d5-951a-4831-a5fd-bea3124af27e"
           }
         ],
         "partitions": [
