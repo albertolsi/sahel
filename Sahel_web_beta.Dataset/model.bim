@@ -20396,7 +20396,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "expression": "SUM(municipios[Shape_Area])/12",
+            "expression": "SUM(municipios[Shape_Area])",
             "lineageTag": "9381c96b-8186-4230-95c9-c33fe34183ab"
           },
           {
