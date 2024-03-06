@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBIDesktopVersion",
-        "value": "2.126.927.0 (24.02)"
+        "value": "2.126.1261.0 (24.02)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -20409,6 +20409,17 @@
             ],
             "expression": "DIVIDE(areas_protegidas[Measure],2)",
             "lineageTag": "e02640d5-951a-4831-a5fd-bea3124af27e"
+          },
+          {
+            "name": "Measure 2",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "areas_protegidas[Measure]",
+            "lineageTag": "ec6c223b-069c-4f76-8f44-9a0b0db2c534"
           }
         ],
         "partitions": [
