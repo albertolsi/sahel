@@ -5,6 +5,7 @@
       {
         "name": "PBIDesktopVersion",
         "value": "2.126.927.0 (24.02)"
+        "value": "2.126.927.0 (24.02)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -19865,6 +19866,17 @@
             "expression": "SUM(areas_protegidas[FID]) ",
             "formatString": "0",
             "lineageTag": "0a360cc1-f53e-4525-b797-be65ab33875c"
+          },
+          {
+            "name": "Medida_zaira",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "SUM(poblacion[POBLACIÓN])/100",
+            "lineageTag": "03036177-c337-4b6d-b4e1-06138e931927"
           }
         ],
         "partitions": [
