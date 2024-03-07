@@ -20959,6 +20959,14 @@
           }
         ],
         "lineageTag": "e2be41f0-a0c0-4a1b-8010-709c8dbd0cec",
+        "measures": [
+          {
+            "name": "medida",
+            "expression": "SUM(areas_protegidas[ID_dep])",
+            "formatString": "0",
+            "lineageTag": "437da923-5b0b-48ca-922e-c9e5f85766de"
+          }
+        ],
         "partitions": [
           {
             "name": "repo_sahel vista_agroc_estadisticos_sahel_EN",
