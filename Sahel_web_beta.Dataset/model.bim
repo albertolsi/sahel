@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBIDesktopVersion",
-        "value": "2.126.1261.0 (24.02)"
+        "value": "2.126.927.0 (24.02)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -20942,8 +20942,8 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "int64",
-            "expression": "IF('repo_sahel vista_agroc_estadisticos_sahel_EN'[Amenazas globales] == \"Amenaza severa\",1000000000,IF('repo_sahel vista_agroc_estadisticos_sahel_EN'[Amenazas globales] == \"Amenaza moderada\",1000000,IF('repo_sahel vista_agroc_estadisticos_sahel_EN'[Amenazas globales] == \"Amenaza leve\",1000,IF('repo_sahel vista_agroc_estadisticos_sahel_EN'[Amenazas globales] == \"Sin riesgo\",0,0))))",
+            "dataType": "double",
+            "expression": "IF('repo_sahel vista_agroc_estadisticos_sahel_EN'[Amenazas globales] == \"Amenaza severa\",1000000000,IF('repo_sahel vista_agroc_estadisticos_sahel_EN'[Amenazas globales] == \"Amenaza moderada\",1000000,IF('repo_sahel vista_agroc_estadisticos_sahel_EN'[Amenazas globales] == \"Amenaza leve\",1000,IF('repo_sahel vista_agroc_estadisticos_sahel_EN'[Amenazas globales] == \"Sin riesgo\",0,0))))/200",
             "formatString": "0",
             "isDataTypeInferred": true,
             "lineageTag": "dbd727a1-0187-416b-84dc-d8b3c387ad37",
@@ -20962,15 +20962,30 @@
             "lineageTag": "83919ff6-bfbc-4e46-9879-d9b3d35164fa",
             "sourceColumn": "Global Threats",
             "summarizeBy": "none"
+          },
+          {
+            "name": "Columna",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "RELATED(municipios[Region])",
+            "isDataTypeInferred": true,
+            "lineageTag": "04fb4dd7-9e19-4026-b2c8-071fe2b6a0d5",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "e2be41f0-a0c0-4a1b-8010-709c8dbd0cec",
         "measures": [
           {
-            "name": "medida",
-            "expression": "SUM(areas_protegidas[ID_dep])",
+            "name": "Amenazas_agroclimaticas_num_V2",
+            "expression": "20000",
             "formatString": "0",
-            "lineageTag": "437da923-5b0b-48ca-922e-c9e5f85766de"
+            "lineageTag": "41b3bbfd-29d7-483f-88c6-216f75bd6eb9"
           }
         ],
         "partitions": [
