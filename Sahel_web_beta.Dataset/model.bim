@@ -19859,6 +19859,12 @@
             "expression": "SUM(poblacion[POBLACIÓN])",
             "formatString": "0",
             "lineageTag": "10ebc49e-d9d8-4f61-bd14-442d5b3efd12"
+          },
+          {
+            "name": "Medida_GONZALO",
+            "expression": "SUM(areas_protegidas[FID]) ",
+            "formatString": "0",
+            "lineageTag": "0a360cc1-f53e-4525-b797-be65ab33875c"
           }
         ],
         "partitions": [
